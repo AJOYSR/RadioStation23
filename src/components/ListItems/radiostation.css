@@ -1,0 +1,43 @@
+/* RadioCart.css */
+.titleText {
+  font-size: 55px;
+  font-weight: bold;
+  color:var(--clr-tileColor);
+  
+}
+.radio-cart {
+    background-color: var(--clr-scarlet);
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .radio-cart h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .radio-cart p {
+    color: #555;
+    margin: 8px 0;
+  }
+  
+  .radio-cart img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .nav-link-icon {
+    width: 22px;
+    color: black;
+    /* filter: invert(100%); */
+    
+  }
+  /* Add other styles as needed */
+  
+  .preserve-whitespace {
+    white-space: pre-wrap !important;
+  }

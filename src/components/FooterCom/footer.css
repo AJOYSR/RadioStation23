@@ -1,0 +1,15 @@
+/* Add or update your CSS */
+.footer {
+    height: 60px;
+    background-color: rgb(57, 57, 245); 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .nav-link-icon {
+    width: 24px;
+    height: 24px;
+  }
+  

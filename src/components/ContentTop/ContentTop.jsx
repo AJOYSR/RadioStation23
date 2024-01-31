@@ -14,13 +14,13 @@ const ContentTop = () => {
   const [initialRender, setInitialRender] = useState(true);
 
   useEffect(() => {
-    // Read theme choice from local storage on component mount
+    
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
-      toggleTheme(); // Toggle theme to set the initial state
+      toggleTheme(); 
     }
     setInitialRender(false);
-  }, []); // Empty dependency array ensures this effect runs only once on mount
+  }, []); 
 
   const navigateToHome = () => {
     navigate("/");
@@ -49,7 +49,7 @@ const ContentTop = () => {
           className="dark-mode-toggle content-top-btn"
           onClick={() => {
             toggleTheme();
-            // Save theme choice to local storage
+            
             localStorage.setItem("theme", isDarkMode ? "light" : "dark");
           }}
         >

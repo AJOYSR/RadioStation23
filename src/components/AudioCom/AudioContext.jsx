@@ -9,7 +9,7 @@ const AudioProvider = ({ children }) => {
   const [volume, setVolume] = useState(0.5);
   const [muted, setMuted] = useState(false);
   const [loop, setLoop] = useState(false);
-  const [duration, setDuration] = useState(0); // Add setDuration state
+  const [duration, setDuration] = useState(0); 
 
   return (
     <AudioContext.Provider
@@ -22,8 +22,8 @@ const AudioProvider = ({ children }) => {
         setMuted,
         loop,
         setLoop,
-        duration, // Expose duration state
-        setDuration, // Expose setDuration function
+        duration, 
+        setDuration, 
       }}
     >
       {children}

@@ -1,4 +1,4 @@
-// Favorite.js
+
 import React from 'react';
 
 const Favourite = () => {

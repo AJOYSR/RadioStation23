@@ -1,4 +1,3 @@
-// ThemeContext.jsx
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 
@@ -12,8 +11,7 @@ export const ThemeProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    // You can add logic to persist the theme preference in local storage here
-    // For simplicity, I'm not adding that in this example
+    
     document.documentElement.classList.toggle("darkmode", isDarkMode);
   }, [isDarkMode]);
 

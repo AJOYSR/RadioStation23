@@ -29,7 +29,7 @@ const Sidebar = () => {
         <hr />
         <ul className="about">
           <li className="nav-item about-list" key={4}>
-            <Link to="/about" className="nav-link"> {/* Assuming "About" path is "/about" */}
+            <Link to="/about" className="nav-link"> 
               <img src={iconsImgs.about} className="nav-link-icon" alt={"About"} />
               <span className="nav-link-text">About</span>
             </Link>

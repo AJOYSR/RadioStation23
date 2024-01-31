@@ -16,7 +16,7 @@ const ContentMain = () => {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    // Fetch radio stations data (replace with your API endpoint)
+
     axios
       .get(
         "https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/bd?limit=100"
@@ -119,7 +119,6 @@ const ContentMain = () => {
             onChange={(e) => setSearchName(e.target.value)}
           />
 
-          {/* Use Select from react-select */}
         </div >
         <ul className="flex flex-wrap items-center gap-8 mx-auto lg:mx-0 lg:flex-row lg:justify-start lg:gap-8 mt-5">
           {filterStations().map((station, index) => (

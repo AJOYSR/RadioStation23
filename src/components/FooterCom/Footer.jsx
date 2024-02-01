@@ -55,7 +55,7 @@ const Footer = () => {
       </button>
       {isPlaying && (
         <ReactPlayer
-          url="/src/assets/audios/gameofthrones.mp3"
+          url="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
           playing={isPlaying}
           volume={volume}
           muted={muted}

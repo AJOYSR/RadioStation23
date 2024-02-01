@@ -1,3 +1,6 @@
+/* The code is a React functional component called `ContentMain`. It imports necessary libraries and
+components such as React, useState, useEffect, axios, Select, RadioStation, Footer, and
+AudioProvider. */
 // Import necessary libraries and components
 import "./ContentMain.css";
 import React, { useState, useEffect } from "react";

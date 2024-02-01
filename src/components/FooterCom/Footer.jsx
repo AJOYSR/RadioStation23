@@ -1,3 +1,5 @@
+/* The code is defining a functional component called `Footer` in JavaScript React. */
+/* The code is defining a functional component called `Footer` in JavaScript React. */
 import React, { useState } from "react";
 import { iconsImgs } from "../../utils/images";
 import ReactPlayer from "react-player";

@@ -1,3 +1,4 @@
+/* The code is exporting two variables, `AudioContext` and `AudioProvider`, from the module. */
 export { AudioContext, AudioProvider };
 
 import React, { createContext, useState } from "react";

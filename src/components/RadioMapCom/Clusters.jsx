@@ -1,3 +1,8 @@
+/**
+ * The `MarkerCluster` component is a React component that displays a cluster of markers on a map and
+ * updates the markers when the map is moved.
+ * @returns The MarkerCluster component is returning null.
+ */
 // ... (other imports)
 
 const MarkerCluster = ({ markers, addMarkers }) => {

@@ -1,3 +1,6 @@
+/* The code provided is a React component called `RadioStation`. It is responsible for rendering a
+radio station card with various features such as displaying the station name, country, image,
+language, class, votes, and buttons for liking and playing the station. */
 // components/ListItems/RadioStation.jsx
 
 import React, { useState } from "react";

@@ -1,3 +1,4 @@
+/* The code block you provided is importing and exporting a collection of SVG icons and person images. */
 // icons svg images
 import alert from "../assets/icons/alert.svg";
 import bell from "../assets/icons/bell.svg";

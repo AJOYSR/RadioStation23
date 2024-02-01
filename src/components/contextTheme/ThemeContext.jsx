@@ -1,3 +1,4 @@
+/* This code is creating a custom theme provider and hook for a React application. */
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 

@@ -1,3 +1,10 @@
+/* The code provided is a React component called `RadioMap` that displays a map with markers clustered
+together. It uses the `react-leaflet` library to render the map and markers. */
+/**
+ * The `MarkerCluster` component is a React component that displays a cluster of markers on a map and
+ * updates the markers when the map is moved.
+ * @returns The MarkerCluster component is returning null.
+ */
 import React, { useEffect, useState } from "react";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";

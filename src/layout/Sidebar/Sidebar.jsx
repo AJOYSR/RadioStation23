@@ -1,3 +1,8 @@
+/**
+ * The Sidebar component is a React component that renders a sidebar navigation menu with links and an
+ * "About" section.
+ * @returns The Sidebar component is returning a JSX element.
+ */
 import { useEffect, useState } from "react";
 import { iconsImgs, personsImgs } from "../../utils/images";
 import { navigationLinks } from "../../data/data";

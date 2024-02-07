@@ -1,7 +1,6 @@
-/* The code is a React functional component called `ContentMain`. It imports necessary libraries and
-components such as React, useState, useEffect, axios, Select, RadioStation, Footer, and
-AudioProvider. */
-// Import necessary libraries and components
+/* The code is a React component called `ContentMain`. It is responsible for rendering a list of radio
+stations based on the selected country, language, and name filters. */
+
 import "./ContentMain.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -19,20 +18,26 @@ const ContentMain = () => {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-
-    axios
-      .get(
-        "https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/bd?limit=100"
-      )
-      .then((response) => setStations(response.data))
-      .catch((error) => console.error("Error fetching data:", error));
-
+    // Fetching stations based on the selected country
+    if (searchCountry) {
+      axios
+        .get(`https://de1.api.radio-browser.info/json/stations/bycountry/${searchCountry}?limit=100`)
+        .then((response) => setStations(response.data))
+        .catch((error) => console.error("Error fetching data:", error));
+    } else {
+      // Fetching stations for all countries if no country is selected by default bangladesh
+      axios
+        .get("https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/bd?limit=100")
+        .then((response) => setStations(response.data))
+        .catch((error) => console.error("Error fetching data:", error));
+    }
+  
     axios
       .get("https://de1.api.radio-browser.info/json/countries")
       .then((response) => setStationCount(response.data))
       .catch((error) => console.error("Error fetching data:", error));
-
-    // Fetch countries data
+  
+    // Fetching countries data
     axios
       .get("https://restcountries.com/v3.1/all?fields=name,flags")
       .then((response) => {
@@ -43,7 +48,7 @@ const ContentMain = () => {
         setCountries(sortedCountries);
       })
       .catch((error) => console.error("Error fetching countries:", error));
-  }, []);
+  }, [searchCountry]);
 
   const filterStations = () => {
     let filteredStations = stations;
@@ -95,9 +100,9 @@ const ContentMain = () => {
     <AudioProvider>
       <div className="radio-list mt-10">
         <div className="filter-options">
-          <Select
+        <Select
             placeholder="Find by Country"
-            value={searchCountry}
+            value={countryOptions.find(option => option.value === searchCountry)}
             className="input-field custom-select"
             classNamePrefix="custom-select"
             onChange={(selectedOption) =>

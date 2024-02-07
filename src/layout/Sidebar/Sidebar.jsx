@@ -4,12 +4,12 @@
  * @returns The Sidebar component is returning a JSX element.
  */
 import { useEffect, useState } from "react";
-import { iconsImgs, personsImgs } from "../../utils/images";
+import { iconsImgs } from "../../utils/images";
 import { navigationLinks } from "../../data/data";
 import "./Sidebar.css";
 import { useContext } from "react";
 import { SidebarContext } from "../../context/sidebarContext";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom"; 
 
 const Sidebar = () => {
   const [activeLinkIdx, setActiveLinkIdx] = useState(1);

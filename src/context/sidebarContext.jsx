@@ -7,6 +7,7 @@ const initialState = {
 }
 
 export const SidebarContext = createContext({});
+
 export const SidebarProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
     const toggleSidebar = () => {

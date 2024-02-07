@@ -1,5 +1,5 @@
 
-# RadioStation 23
+# RadioStation 23 | Online Radio Player Application
 
 A web application for streaming radio stations with a user-friendly dashboard. 
 

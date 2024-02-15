@@ -141,6 +141,8 @@ Context API Usage
 * Distributed version control system for tracking changes in the codebase.
 #### GitHub: 
 * A web-based platform for hosting and collaborating on Git repositories.
+#### Deployment
+* netlify | free hosting site
 
 
 ## Authors
